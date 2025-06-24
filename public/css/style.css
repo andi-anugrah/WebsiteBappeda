@@ -1,0 +1,314 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Header */
+.navbar {
+    background-color: #10316B !important;
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo-kendari {
+    width: 9vh;
+}
+
+.navbar .logo-bappeda {
+    width: 17vh;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: #fff !important;
+    margin: 0 3vh;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FDBE34 !important;
+}
+
+.navbar-nav .dropdown-menu {
+    border: none;
+    padding: 0; 
+    margin-left: 25px; 
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #b2b2b2 !important;
+    border-radius: 5px; 
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 49, 107, 0.5);
+}
+
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-12%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 80%;
+}
+
+.hero-content h1, h2 {
+    font-size: 2.5rem;
+}
+
+.hero-content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: translateY(1px);
+}
+
+.wave svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Planning Section */
+.planning-section img {
+    width: 100%;
+}
+
+.planning-section h1 {
+    font-size: 3rem;
+}
+
+.planning-section p {
+    line-height: 1.2;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #3f3f3f;
+}
+
+/* Struktur-organisasi Section */
+.struktur-organisasi > .container {
+    align-items: center;
+}
+
+.struktur-organisasi img {
+    width: 90%;
+    border-radius: 2vh;
+}
+
+/* Tugas-fungsi Section */
+.tugas-fungsi {
+    background-color: #fff;
+    text-align: center;
+}
+
+.tugas-fungsi .title {
+    font-size: 2.6rem;
+}
+
+.tugas-fungsi .sub-title {
+    font-size: 1.9rem;
+}
+
+.tugas-fungsi .description {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+/* Document Section */
+.document-section h1 {
+    font-size: 3rem;
+}
+
+.document-card {
+    width: 100%;
+    height: auto;
+    padding: 6vh 6vh;
+    background-color: white;
+    border: solid 2px #9d9d9d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.document-card:hover {
+    background-color: rgba(157, 157, 157, 0.1) ;
+    border: solid 2px #000;
+}
+
+.document-card a {
+    color: #000;
+    text-decoration: none;
+}
+
+.document-card img {
+    width: 6vw;
+}
+
+.document-card p {
+    font-size: 2.6rem;
+}
+
+/* News Section */
+.news-section h1 {
+    font-size: 3rem;
+}
+
+.news-section a.btn-lg, h5.card-title {
+    color: #000;
+    text-decoration: none;
+}
+
+.news-section a.btn-lg:hover, h5.card-title:hover {
+    color: #FDBE34 !important;
+    text-decoration: none;
+}
+
+.card {
+    transition: transform 0.3s;
+    margin: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 34vh;
+    object-fit: cover;
+}
+
+.news-section .text-justify, h5 {
+    text-align: justify;
+}
+
+/* Statistics Section */
+.bg-darker-blue {
+    background-color: #10316B !important;
+}
+
+.statistics-section h1 {
+    font-size: 3rem;
+}
+
+/* Footer */
+.footer > .container::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.2vh;
+    background-color: #fff;
+    margin: 30px 0 0 0;
+}
+
+.contact-item, p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons i {
+    color: #fff;
+}
+
+.map-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 67vh;
+}
+
+/* Tombol Scroll to Top */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 3vh;
+    width: 8vh;
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #10316B;
+    border: none;
+    font-size: 5vh;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+#scrollToTopBtn:hover {
+    color: #0B409C;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+    }
+    
+    .hero-content h1, h2 {
+        font-size: 4vh;
+    }
+    
+    .hero-content {
+        left: 50%; /* Posisikan di tengah */
+        transform: translate(-50%, -50%); /* Center secara horizontal dan vertikal */
+        width: 90%; /* Batasi lebar konten */
+    }
+    .wave {
+        height: auto;
+    }
+
+    .document-card p {
+        font-size: 4vh; /* Lebih kecil dari 7vh */
+    }
+    
+    /* Sesuaikan heading pada berbagai section */
+    .planning-section h1,
+    .document-section h1,
+    .news-section h1,
+    .statistics-section h1 {
+        font-size: 5vh; /* Lebih kecil dari 8vh */
+    }
+}

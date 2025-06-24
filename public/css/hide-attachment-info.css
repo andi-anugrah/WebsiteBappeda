@@ -1,0 +1,24 @@
+.attachment__caption,
+.attachment__name,
+.attachment__size {
+    display: none !important;
+}
+
+figure[data-trix-attachment] figcaption {
+    display: none !important;
+}
+
+.ProseMirror figure[data-trix-attachment],
+.attachment {
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+}
+
+.ProseMirror figure[data-trix-attachment] img,
+.attachment img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
