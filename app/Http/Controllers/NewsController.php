@@ -26,17 +26,6 @@ class NewsController extends Controller
             ->published()
             ->firstOrFail();
 
-        // Ambil berita sebelumnya dan selanjutnya (opsional)
-        $previousNews = Berita::where('tgl_publikasi', '<', $berita->tgl_publikasi)
-            ->published()
-            ->latest()
-            ->first();
-
-        $nextNews = Berita::where('tgl_publikasi', '>', $berita->tgl_publikasi)
-            ->published()
-            ->oldest()
-            ->first();
-
-        return view('berita-selengkapnya', compact('berita', 'previousNews', 'nextNews'));
+        return view('berita-selengkapnya', compact('berita'));
     }
 }
