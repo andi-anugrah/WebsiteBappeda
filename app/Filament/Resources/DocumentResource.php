@@ -76,12 +76,12 @@ class DocumentResource extends Resource
                                 'application/vnd.ms-excel',
                                 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
                             ])
-                            ->maxSize(20480) // 20MB
+                            ->maxSize(10240) // 10MB
                             ->downloadable()
                             ->openable()
                             ->previewable(false)
                             ->columnSpanFull()
-                            ->helperText('Format yang didukung: PDF, DOC, DOCX, XLS, XLSX. Maksimal 20MB.')
+                            ->helperText('Format yang didukung: PDF, DOC, DOCX, XLS, XLSX. Maksimal 10MB.')
                             ->saveUploadedFileUsing(function ($file, $set) {
                                 $filename = $file->getClientOriginalName();
                                 $size = $file->getSize();
