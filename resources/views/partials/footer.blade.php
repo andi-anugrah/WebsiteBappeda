@@ -13,7 +13,7 @@
                     <p><i class="fas fa-phone fa-2x me-3"></i>(0401) 3127 361</p>
                 </div>
                 <div class="contact-item mb-1">
-                    <p><i class="fas fa-envelope fa-2x me-3"></i>Gmail Instansi</p>
+                    <p><i class="fas fa-envelope fa-2x me-3"></i>bappedakendari@gmail.com</p>
                 </div>
 
                 <h4 class="fw-bold mt-4">Sosial Media</h4>
