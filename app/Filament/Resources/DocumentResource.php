@@ -76,7 +76,7 @@ class DocumentResource extends Resource
                                 'application/vnd.ms-excel',
                                 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
                             ])
-                            ->maxSize(10240) // 10MB
+                            ->maxSize(20480) // 20MB
                             ->downloadable()
                             ->openable()
                             ->previewable(false)
