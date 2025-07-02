@@ -81,7 +81,7 @@ class DocumentResource extends Resource
                             ->openable()
                             ->previewable(false)
                             ->columnSpanFull()
-                            ->helperText('Format yang didukung: PDF, DOC, DOCX, XLS, XLSX. Maksimal 10MB.')
+                            ->helperText('Format yang didukung: PDF, DOC, DOCX, XLS, XLSX. Maksimal 20MB.')
                             ->saveUploadedFileUsing(function ($file, $set) {
                                 $filename = $file->getClientOriginalName();
                                 $size = $file->getSize();
