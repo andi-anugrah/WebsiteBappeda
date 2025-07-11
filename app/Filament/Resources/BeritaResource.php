@@ -165,7 +165,7 @@ class BeritaResource extends Resource
                     ->label('Diperbarui')
                     ->dateTime('d M Y H:i')
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->toggleable(isToggledHiddenByDefault: true)
             ])
             ->filters([
                 Filter::make('published')

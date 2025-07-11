@@ -22,8 +22,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
 
-        FilamentAsset::register([
-        Css::make('hide-attachment-info', __DIR__.'/../../resource/css/hide-attachment-info.css'),
-        ]);
+        // FilamentAsset::register([
+        // Css::make('hide-attachment-info', __DIR__.'/../../resource/css/hide-attachment-info.css'),
+        // ]);
     }
 }
